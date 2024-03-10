@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>j5</title>
+<style>
+.con{text-align:center;}
+.button{
+border:none;
+color:white;
+font-size:35px;
+display:inline;
+background-color:orange;}
+</style>
+</head>
+<body style="background-image:url('2.jpg');">
+<br>
+<br>
+<p id="mouse" onmousedown="mouseDown()" onmouseup="mouseUp()" style="text-align:center;color:white;font-size:50px;">
+<b>WELCOME</b>
+</p>
+<div class="con">
+<div class="button">
+<button class="button" ondblclick = "getElementById('click').innerHTML = Date()" >Double click to know todays date</button>
+<p id="click"></p></div></div>
+<script>
+window.onclick = myFunction;
+
+function myFunction() {
+  document.getElementsByTagName("BODY")[0].style.backgroundImage = "url(1.jpg)";
+}
+
+function mouseDown() {
+  document.getElementById("mouse").style.color = "black";
+}
+
+function mouseUp() {
+  document.getElementById("mouse").style.color = "orange";
+}
+
+</script>
+
+</body>
+</html

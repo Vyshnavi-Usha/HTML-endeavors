@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Even or Odd</title>
+<style>
+  body {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<h1>Enter a number</h1>
+<input id="userVal" type="text" value="">
+<input id="click-me" type="submit" onclick="evenOrOdd()"><br>
+<div id="results"></div>
+<script>
+function evenOrOdd() {
+  var userInput = Number(document.getElementById("userVal").value);
+  if (!isNaN(userInput)) {
+    if (userInput % 2 === 0) {
+      document.getElementById("results").innerHTML = "The Number is Even";
+    } else {
+      document.getElementById("results").innerHTML = "The Number is Odd";
+    }
+  } else {
+    document.getElementById("results").innerHTML = "Invalid entry";
+  }
+}
+</script>
+</body>
+</html>

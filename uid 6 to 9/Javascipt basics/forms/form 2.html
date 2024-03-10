@@ -1,0 +1,51 @@
+<!DOCTYPE. html>
+<html>
+<head>
+<title> FORMS</title>
+<style>
+div{
+background-color:#F9F6EE;
+border:2px solid #F9F6EE;
+padding:10px;
+margin:2px 300px 2px 300px ;}
+</style>
+<script>  
+function validateform(){  
+var name=document.myform.name;  
+var password=document.myform.pwd;  
+  
+if (name.value.length<=0){  
+  alert("Name can't be blank"); 
+   name.focus(); 
+  return false;  
+}
+return false;
+}
+</script>  
+</head>
+<body>
+<h2 style="margin-left:680px;color:brown;"><u>Student Registration Form</u></h2>
+<forms name="myform" onsubmit="return validateform();">
+<div>
+<table align="center" cellpadding="10px">
+<tr>
+<td><label for="name" >Name:</label></td><td> <input type="text" id="name" name="name" value="" size="50" placeholder="Enter your Name"  ></td></tr>
+<tr><td><label for="email">Email:</label></td><td><input type="email" id="email" name="email" autocomplete placeholder="it should contain @" size="50" ></td></tr>
+<tr><td><label for="zip">Zip:</label> </td><td><input type="text" id="zip" name="zip" value="" size="50"></td></tr>
+
+
+
+<tr><td><label for="country">Country:</label></td>
+  <td><select id="country name="country">
+    <option value="-1" selected>choose yours</option>
+    <option value="1">USAL</option>
+    <option value="2">UK</option>
+    <option value="3">INDIA</option>
+    </select></td></tr>
+
+<tr><td><label  for="pwd">Password:</label></td><td><input type="password" id="pwd" name="pwd" size="50"></td></tr>
+<tr><td><input type= "submit" value="Submit" onclick="return validateform();"/></td></tr>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Student Registration Form</title>
+<script>
+function validate() {
+if(document.getElementById("email").value=="") {
+alert("Email Id cant be null\n");
+return false;
+}
+if(document.getElementById("pincode").value==""){
+alert("pincode cant be null");
+return false;
+}
+if(document.getElementById("password").value==""){
+alert("Password cant be null");
+}
+}
+</script>
+<style>
+*{
+padding:4px 6px 3px 0;
+}
+.forms{
+background-color:rgb(173, 166, 166);
+margin:0px auto;
+width:700px;
+padding:10px;
+}
+input[type]{
+width:500px;
+border-radius:4px;
+}
+input[type=radio],input[type=checkbox] {
+width:20px;
+}
+textarea{
+border-radius:6px;
+}
+select{
+border-radius: 4px;
+}
+input[type = checkbox] {
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+}
+input[type=submit]{
+background-color:rgb(87, 208, 87);
+width:100px;
+}
+:placeholder-shown{
+padding-left:10px;
+}
+</style>
+</head>
+<body>
+<div class="forms">
+<form action="submit.txt" onsubmit="validate()">
+<table>
+<tr>
+<td>First Name:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" value="" placeholder="Enter your first name"></td>
+</tr>
+<tr>
+<td>Last Name:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" value="" placeholder="Enter your last name"></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="email" id = "email" value="" placeholder="it should contain @"></td>
+</tr>
+<tr>
+<td>Mobile:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="number" value="" placeholder="only 10 digits allowed"></td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td></td>
+<td><input type="radio" name="gender">Male<input type="radio" name="gender">Female</td>
+</tr>
+<tr>
+<td>Date of Birth:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="date" value=""></td>
+</tr>
+<tr>
+<td>Address:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><textarea name="" id="" cols="67" rows="5"></textarea></td>
+</tr>
+<tr>
+<td> City:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" value=""></td>
+</tr>
+<tr>
+<td>Area PIN:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" id="pincode" value="" ></td>
+</tr>
+<tr>
+<td>State:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" value="" ></td>
+</tr>
+<tr>
+<td>Qualification:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><select name="" id="">
+<option value="">Select Qualification</option>
+<option value="">Computer Software and application knowledge</option>
+<option value="">Data Analysis</option>
+<option value="">Negotiation</option>
+<option value="">Mathematics</option>
+</select></td>
+</tr>
+<tr>
+<td>Specialization:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<input type="checkbox">Computer Science <br>
+<input type="checkbox">Information Technology <br>
+<input type="checkbox">Computer Architecture <br>
+<input type="checkbox">Tele Communication <br>
+
+</td>
+</tr>
+<tr>
+<td>Password:</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" id="password" value="" ></td>
+</tr>
+<tr>
+<td><input type="submit" value="regestired">
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

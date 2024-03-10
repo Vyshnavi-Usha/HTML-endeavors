@@ -1,0 +1,29 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<title>EVEN OR ODD</title>
+<style>
+body{
+text-align:center;}
+</style>
+</head>
+<body>
+<br>
+<h1>ENTER A NUMBER</h1>
+<input id="userVal" type="text" value=""><br><br>
+<input id="click-me" type="submit" onclick="evenorodd()">
+<div id="result"></div>
+<script>
+function evenorodd(){
+  var userInput = Number(document.getElementById("userVal").value);
+  if ((userInput % 2) == 0){
+   document.getElementById("result").textcontent = "Even";}
+  }else
+     document.getElementById("result").textcontent = "Odd";}
+
+}
+   
+
+</script>
+</body>
+</html>
